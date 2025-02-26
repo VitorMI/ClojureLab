@@ -10,7 +10,7 @@
   (println "Digite o número de pares:")
   (let [n (Integer/parseInt (read-line))]
     (doseq [i (range n)]
-      (println (str "Quantidade de figurinhas dos dois usuários (separadas por espaço)" (inc i) ":"))
+      (println (str "Digite os pares (separados por espaço)" (inc i) ":"))
       (let [input (read-line)
             [a b] (map #(Integer/parseInt %) (str/split input #"\s+"))]
         (println (str "O maior bolo de figurinhas possível para troca é: " (mdc a b)))))))
