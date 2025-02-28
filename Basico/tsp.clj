@@ -33,7 +33,7 @@
 ;; Função principal para testar o algoritmo do TSP.
 ;; Define uma lista de cidades com suas coordenadas, calcula a melhor rota e imprime o resultado.
 (defn -main []
-  (let [cities [[0 0] [4 0] [5 3] [2 5] [1 2]]] ;; Lista de cidades com coordenadas (x, y)
+  (let [cities [[0 0] [3 4] [7 3] [6 0] [2 2]]] ;; Lista de cidades com coordenadas (x, y)
     (println "Cidades:" cities)
     (let [[melhorRota melhorCusto] (forcaBruta cities)
           formatted-cost (format "%.2f" melhorCusto)] ;; Formata o custo com duas casas decimais
