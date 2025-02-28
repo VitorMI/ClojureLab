@@ -2,7 +2,7 @@
 (ns tsp)
 
 ;; Calcula a distância euclidiana entre duas cidades representadas por coordenadas (x, y).
-;; Formula: raiz(x2 - x1)^2 (y2 - y1)^2
+;; Formula: sqrt((x2 - x1)^2 (y2 - y1)^2)
 (defn distancia [[x1 y1] [x2 y2]]
   (Math/sqrt
    (+ (Math/pow (- x2 x1) 2)
